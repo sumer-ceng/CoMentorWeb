@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Select elements to animate
-    const hiddenElements = document.querySelectorAll('.feature-card, .section-header, .about-content, .grid-img, .cta-container');
+    const hiddenElements = document.querySelectorAll('.feature-card, .section-header, .about-content, .grid-img, .cta-container, .screenshot-card');
     
     // Add hidden base class and observe
     hiddenElements.forEach(el => {
