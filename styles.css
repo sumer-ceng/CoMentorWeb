@@ -211,6 +211,13 @@ p {
     font-size: 1.8rem;
 }
 
+.logo-img {
+    height: 36px;
+    width: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
