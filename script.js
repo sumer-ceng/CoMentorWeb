@@ -1,12 +1,12 @@
 /**
- * CoMentor Landing Page Animations & Interactivity
+ * Panda's Tech Landing Page - Core Interactions
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Navbar Scroll Effect ---
     const navbar = document.querySelector('.navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -26,18 +26,43 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                // Optional: Stop observing once animated
+                // Opt out of unobserve to allow re-trigger or keep it 
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
     // Select elements to animate
-    const hiddenElements = document.querySelectorAll('.feature-card, .section-header, .about-content, .grid-img, .cta-container, .screenshot-card');
-    
-    // Add hidden base class and observe
+    const hiddenElements = document.querySelectorAll(`
+        .service-card, 
+        .section-title, 
+        .section-subtitle, 
+        .mockup-info, 
+        .phone-mockup, 
+        .why-us-content, 
+        .why-us-visual
+    `);
+
+    // Add hidden base class dynamically based on new setup
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .scroll-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .scroll-hidden.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Sub-delays for grid items */
+        .service-card:nth-child(2) { transition-delay: 150ms; }
+        .service-card:nth-child(3) { transition-delay: 300ms; }
+    `;
+    document.head.appendChild(style);
+
     hiddenElements.forEach(el => {
-        el.classList.add('hidden');
+        el.classList.add('scroll-hidden');
         observer.observe(el);
     });
 
@@ -45,18 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
+            if (targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
-                // Adjust for fixed navbar height
                 const navHeight = document.querySelector('.navbar').offsetHeight;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - navHeight;
-  
+
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
@@ -65,39 +89,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Interactive CTA Form submission simulation ---
-    const ctaForm = document.querySelector('.cta-form');
-    if(ctaForm) {
-        ctaForm.addEventListener('submit', (e) => {
+    // --- Contact Form Submission (Gmail) ---
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const btn = ctaForm.querySelector('button');
-            const input = ctaForm.querySelector('input');
             
-            const orgText = btn.innerText;
-            btn.innerHTML = '<i class="ph ph-spinner-gap" style="animation: spin 1s linear infinite;"></i> Bekleniyor...';
-            btn.style.opacity = '0.8';
+            // Form verilerini al
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
             
+            // Hedef e-posta (sabit)
+            const targetEmail = "pandast3ch@gmail.com";
+            
+            // Gmail URL parametrelerini encode et
+            const emailSubject = encodeURIComponent(subject);
+            const emailBody = encodeURIComponent(
+                "Gönderen: " + name + " (" + email + ")\n\n" +
+                "Mesaj:\n" + message
+            );
+            
+            // Gmail oluşturma ekranı bağlantısı
+            const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${targetEmail}&su=${emailSubject}&body=${emailBody}`;
+            
+            // Bağlantıyı yeni sekmede aç
+            window.open(gmailLink, '_blank');
+            
+            // Buton için görsel geri bildirim
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="ph-bold ph-check"></i> Gmail Yönlendiriliyor...';
+            btn.style.background = '#059669';
+            btn.style.color = '#fff';
+            
+            // 3 saniye sonra formu ve butonu sıfırla
             setTimeout(() => {
-                btn.innerHTML = '<i class="ph-fill ph-check-circle"></i> Başarılı!';
-                btn.style.background = '#10b981';
-                input.value = '';
-                
-                setTimeout(() => {
-                    btn.innerHTML = orgText;
-                    btn.style.background = '';
-                    btn.style.opacity = '1';
-                }, 3000);
-            }, 1500);
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                btn.style.color = '';
+                contactForm.reset();
+            }, 3000);
         });
     }
-
-    // Adding infinite spin keyframe via JS for the spinner
-    const style = document.createElement('style');
-    style.innerHTML = `
-        @keyframes spin { 
-            100% { transform: rotate(360deg); } 
-        }
-    `;
-    document.head.appendChild(style);
 
 });

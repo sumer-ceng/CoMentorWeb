@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panda's Tech - Eğitimin Geleceğine Yön Verin</title>
-    <meta name="description"
-        content="Panda's Tech ile öğrenme sürecini yeniden tanımlıyoruz. Yapay zeka destekli eğitim asistanı.">
-    <!-- Google Fonts: Outfit -->
+    <title>Panda's Tech - Eğitimi Kodluyoruz</title>
+    <meta name="description" content="Panda's Tech, eğitim teknolojilerinde devrim yaratan, yapay zeka destekli CoMentor asistanı ve kurumsal EdTech yazılımları sunan bir şirkettir.">
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+    <!-- Overlay Gradients for Background Aesthetics -->
+    <div class="bg-glow pattern-glow-left"></div>
+    <div class="bg-glow pattern-glow-right"></div>
+    
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container nav-container">
@@ -26,221 +27,251 @@
                 Panda's Tech
             </a>
             <ul class="nav-links">
-                <li><a href="#features">Özellikler</a></li>
-                <li><a href="#app-preview">Arayüz</a></li>
-                <li><a href="#about">Vizyon</a></li>
-                <li><a href="#" class="btn btn-outline">Giriş Yap</a></li>
+                <li><a href="#product">CoMentor</a></li>
+                <li><a href="#services">Çözümler</a></li>
+                <li><a href="#why-us">Neden Biz?</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Bize Ulaşın</a></li>
             </ul>
+            <div class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-bg-glow"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="badge">✨ Yeni Nesil Öğrenme Deneyimi</div>
-                <h1>Eğitimin Geleceğine <br><span class="text-gradient">Yön Verin.</span></h1>
-                <p>CoMentor ile öğrenme sürecini yeniden tanımlıyoruz. Akıllı öğrenci takibi, yapay zeka destekli
-                    çalışma koçu ve uçtan uca eğitim yönetimi.</p>
-                <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">Keşfet <i class="ph ph-arrow-right"></i></a>
-                    <a href="#" class="btn btn-secondary">Erken Erişim <i class="ph ph-rocket-launch"></i></a>
+                <div class="badge">
+                    <span class="badge-dot"></span> Architecting the Future of Education
+                </div>
+                <h1>Eğitimi <br><span class="text-emerald">Kodluyoruz.</span></h1>
+                <p>Panda's Tech olarak vizyonumuz, eğitim ekosistemini geleceğe taşımak. Okullar, dershaneler ve öğrenciler için yapay zeka entegreli, özel tasarlanmış teknolojik çözümler üretiyoruz.</p>
+                <div class="btn-group">
+                    <a href="#product" class="btn btn-primary">Ürünleri Keşfet</a>
+                    <a href="#services" class="btn btn-outline">Hizmetlerimiz</a>
                 </div>
             </div>
+            
             <div class="hero-visual">
-                <!-- CSS Based Animated Sphere / Object -->
-                <div class="glass-card main-glass-card">
-                    <div class="card-header">
-                        <i class="ph-fill ph-brain text-gradient"></i> AI Koçu
+                <!-- 3D Abstract Geometric Panda Setup in CSS -->
+                <div class="geometric-panda-container">
+                    <div class="orbit-ring ring-1"></div>
+                    <div class="orbit-ring ring-2"></div>
+                    <div class="orbit-ring ring-3"></div>
+                    
+                    <div class="geo-panda">
+                        <div class="panda-ear left"></div>
+                        <div class="panda-ear right"></div>
+                        <div class="panda-face">
+                            <div class="panda-eye-patch left"><div class="panda-eye"></div></div>
+                            <div class="panda-eye-patch right"><div class="panda-eye"></div></div>
+                            <div class="panda-nose"></div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="stat-bar">
-                            <div class="fill" style="width: 85%"></div>
-                        </div>
-                        <div class="stat-bar">
-                            <div class="fill" style="width: 60%"></div>
-                        </div>
-                        <div class="stat-bar">
-                            <div class="fill" style="width: 95%"></div>
-                        </div>
+
+                    <!-- Floating Tech Cards -->
+                    <div class="float-card tech-card-1">
+                        <i class="ph-fill ph-code text-emerald"></i>
+                        <span>Yenilikçi Yazılım</span>
+                    </div>
+                    <div class="float-card tech-card-2">
+                        <i class="ph-fill ph-cpu text-slate"></i>
+                        <span>AI Güçlü Çekirdek</span>
                     </div>
                 </div>
-                <div class="glass-card small-glass-card float-anim-1">
-                    <i class="ph-fill ph-check-circle"></i> Görev Tamamlandı
-                </div>
-                <div class="glass-card small-glass-card-2 float-anim-2">
-                    <i class="ph-fill ph-trend-up"></i> Gelişim Hızlandı
-                </div>
-                <div class="sphere"></div>
             </div>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Featured Product: CoMentor -->
+    <section id="product" class="product-section">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>Öne Çıkan Özellikler</h2>
-                <p>Başarıya ulaşmak için ihtiyacınız olan tüm araçlar tek bir platformda.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card glass-panel">
-                    <div class="icon-wrapper">
-                        <i class="ph ph-robot"></i>
-                    </div>
-                    <h3>Yapay Zeka Çalışma Koçu</h3>
-                    <p>Öğrencilere özel haftalık planlayıcı ve akıllı analizler ile potansiyellerini en üst seviyeye
-                        çıkarın.</p>
+            <div class="section-label">Amiral Gemisi Ürünümüz</div>
+            <h2 class="section-title">CoMentor: <span class="text-emerald">AI Sınav Koçu</span></h2>
+            <p class="section-subtitle">Öğrenci başarısını artıran akıllı asistan. Her öğrenci için kişiselleştirilmiş rehberlik deneyimini mobil cihazlara taşıyoruz.</p>
+
+            <div class="mockup-showcase">
+                <div class="mockup-info glass-panel">
+                    <h3><i class="ph-fill ph-calendar-check text-emerald"></i> Akıllı Planlama</h3>
+                    <p>Öğrencinin anlama hızına, hedeflerine ve eksik konularına göre yapay zeka tarafından dinamik olarak hazırlanan haftalık çalışma programları.</p>
+                    <ul class="feature-list">
+                        <li><i class="ph-bold ph-check text-emerald"></i> Dinamik revizyon</li>
+                        <li><i class="ph-bold ph-check text-emerald"></i> Görev takibi ve anımsatıcılar</li>
+                    </ul>
                 </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon-wrapper">
-                        <i class="ph ph-chalkboard-teacher"></i>
+
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <!-- Mock App Interface Elements Built in HTML/CSS representing CoMentor -->
+                        <div class="app-header">
+                            <div class="app-greeting">Günaydın, Ali <span class="wave">👋</span></div>
+                            <div class="app-avatar"></div>
+                        </div>
+                        <div class="app-card gradient-card">
+                            <div class="card-title">Bugünkü Hedefin</div>
+                            <div class="progress-ring-container">
+                                <svg class="progress-ring" width="80" height="80">
+                                    <circle class="progress-ring__circle" stroke="white" stroke-width="6" fill="transparent" r="34" cx="40" cy="40"/>
+                                </svg>
+                                <span class="progress-text">%75</span>
+                            </div>
+                            <div class="card-desc">Matematik eksiklerin hızla kapanıyor.</div>
+                        </div>
+                        <div class="app-tasks">
+                            <h4>Bugünün Görevleri</h4>
+                            <div class="task-item">
+                                <div class="task-icon"><i class="ph-fill ph-book-open"></i></div>
+                                <div class="task-text">Trigonometri Özeti</div>
+                                <div class="task-check checked"><i class="ph-bold ph-check"></i></div>
+                            </div>
+                            <div class="task-item">
+                                <div class="task-icon"><i class="ph-fill ph-pencil-simple"></i></div>
+                                <div class="task-text">Türev Test Çözümü</div>
+                                <div class="task-check"></div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Öğrenci & Mentor Paneli</h3>
-                    <p>Tek merkezden duyuru, takip ve gelişim yönetimi sunarak iletişimi daha güçlü hale getirin.</p>
                 </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon-wrapper">
-                        <i class="ph ph-chart-line-up"></i>
-                    </div>
-                    <h3>Detaylı İstatistikler</h3>
-                    <p>Başarıyı ölçümlemek, eksikleri önceden tespit etmek için gelişmiş ve özelleştirilebilir analiz
-                        ekranları.</p>
-                </div>
-                <div class="feature-card glass-panel">
-                    <div class="icon-wrapper">
-                        <i class="ph ph-calendar-check"></i>
-                    </div>
-                    <h3>Haftalık Planlayıcı</h3>
-                    <p>Hedeflere ulaşmayı kolaylaştıran, görev takibini basitleştiren entegre takvim ve planlama aracı.
-                    </p>
+
+                <div class="mockup-info glass-panel">
+                    <h3><i class="ph-fill ph-chart-polar text-emerald"></i> Gelişmiş Analitik</h3>
+                    <p>Çözülen soruları ve deneme sınavlarını analiz eden, öğrencinin hangi alanlarda zayıf olduğunu tespit eden yapay zeka motoru.</p>
+                    <ul class="feature-list">
+                        <li><i class="ph-bold ph-check text-emerald"></i> Deneme sınavı grafikleri</li>
+                        <li><i class="ph-bold ph-check text-emerald"></i> Zayıf konu tespiti</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- App Preview / Screenshots Section -->
-    <section id="app-preview" class="app-preview">
-        <div class="container text-center">
-            <div class="section-header">
-                <h2>Uygulama Arayüzü</h2>
-                <p>Yakında yayınlanacak uygulamamızın sunduğu eşsiz deneyime içeriden bir bakış atın.</p>
-            </div>
-            <div class="screenshots-grid">
-                <!-- Görüntü Boşlukları: Kullanıcı "src='...'" ekleyerek doldurabilir -->
-                <div class="screenshot-card glass-panel">
-                    <div class="screenshot-img-box">
-                        <i class="ph ph-image" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #94a3b8;"></i>
-                        <span>Görüntü 1 Yükle</span>
-                        <!-- <img src="resim_yolu.png" class="app-screenshot" alt="Öğrenci Paneli"> -->
-                    </div>
-                    <p class="screenshot-caption">Öğrenci Kontrol Paneli</p>
-                </div>
-                
-                <div class="screenshot-card glass-panel center-shot">
-                    <div class="screenshot-img-box">
-                        <i class="ph ph-image" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #94a3b8;"></i>
-                        <span>Görüntü 2 Yükle</span>
-                        <!-- <img src="resim_yolu.png" class="app-screenshot" alt="Haftalık Planlayıcı"> -->
-                    </div>
-                    <p class="screenshot-caption">Haftalık Planlayıcı</p>
-                </div>
+    <!-- Service Solutions -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-label">Kurumsal Çözümler</div>
+            <h2 class="section-title">Eğitimde <span class="text-emerald">Dijital Dönüşüm</span></h2>
+            <p class="section-subtitle">Okulların ve dershanelerin en büyük problemleri olan otomatik programlama ve veri analizi gibi ihtiyaçlar için terzi dikimi yönetim yazılımları geliştiriyoruz.</p>
 
-                <div class="screenshot-card glass-panel">
-                    <div class="screenshot-img-box">
-                        <i class="ph ph-image" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #94a3b8;"></i>
-                        <span>Görüntü 3 Yükle</span>
-                        <!-- <img src="resim_yolu.png" class="app-screenshot" alt="Detaylı Analiz"> -->
+            <div class="services-grid">
+                <div class="service-card glass-panel group-hover">
+                    <div class="service-icon-box">
+                        <i class="ph-fill ph-calendar-plus"></i>
                     </div>
-                    <p class="screenshot-caption">AI Detaylı Analiz</p>
+                    <h3>Otomatik Planlama Sistemleri</h3>
+                    <p>Kurumlarınız için karmaşık ders programları oluşturma, nöbetçi öğretmen atamaları ve sınıf dağılımlarını algoritma destekli, çakışmasız şekilde yönetin.</p>
+                </div>
+                <div class="service-card glass-panel group-hover">
+                    <div class="service-icon-box">
+                        <i class="ph-fill ph-student"></i>
+                    </div>
+                    <h3>AI Destekli Performans Takibi</h3>
+                    <p>Öğrencilerin akademik gelişim sürecini tek bir platformda toplayın, yapay zeka analizleriyle başarı olasılıklarını ve eksikleri idarece gözlemleyin.</p>
+                </div>
+                <div class="service-card glass-panel group-hover">
+                    <div class="service-icon-box">
+                        <i class="ph-fill ph-laptop"></i>
+                    </div>
+                    <h3>Özel Eğitim Yönetim Yazılımları</h3>
+                    <p>Kurumunuzun iş akışına özel, öğretmen-öğrenci-veli iletişimini merkeze alan ve bulut tabanlı çalışan esnek yönetim (LMS/ERP) sistemleri geliştiriyoruz.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About / Vision Section -->
-    <section id="about" class="about">
-        <div class="container about-container">
-            <div class="about-visual">
-                <div class="vision-grid">
-                    <div class="grid-img img-1 glass-panel"></div>
-                    <div class="grid-img img-2 glass-panel"></div>
+    <!-- Why Us? -->
+    <section id="why-us" class="why-us-section">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <div class="section-label">Neden Biz?</div>
+                    <h2 class="section-title">Mühendislik ve <span class="text-emerald">İnovasyon</span></h2>
+                    <p class="section-subtitle-left">Genç, dinamik ve çözüm odaklı yaklaşımımızla fikirleri ürüne dönüştürüyoruz. Geliştirdiğimiz yazılımlar sadece birer fikir değil; sağlam birer mühendislik eseridir.</p>
+                    
+                    <div class="tech-stack">
+                        <div class="tech-badge">
+                            <i class="ph-fill ph-file-code"></i> Flutter Üstünlüğü
+                        </div>
+                        <div class="tech-badge">
+                            <i class="ph-fill ph-database"></i> .NET Güvenlik Mimarisi
+                        </div>
+                        <div class="tech-badge">
+                            <i class="ph-fill ph-brain"></i> Machine Learning (ML)
+                        </div>
+                        <div class="tech-badge">
+                            <i class="ph-fill ph-cloud-arrow-up"></i> Bulut Altyapısı
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual glass-panel">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <div class="editor-title">main.dart - Panda's Tech</div>
+                        </div>
+                        <div class="editor-body">
+<pre><code><span class="keyword">void</span> <span class="function">main</span>() {
+  <span class="keyword">runApp</span>(<span class="class">PandasTechEdu</span>());
+}
+
+<span class="keyword">class</span> <span class="class">PandasTechEdu</span> <span class="keyword">extends</span> <span class="class">StatelessWidget</span> {
+  <span class="annotation">@override</span>
+  <span class="class">Widget</span> build(<span class="class">BuildContext</span> context) {
+    <span class="keyword">return</span> <span class="class">MaterialApp</span>(
+      title: <span class="string">'Eğitimin Geleceği'</span>,
+      theme: <span class="class">AppTheme</span>.<span class="property">emeraldDark</span>,
+      home: <span class="keyword">await</span> <span class="class">AISystem</span>.initialize(),
+    );
+  }
+}</code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="about-content">
-                <h2>Eğitimde <span class="text-gradient">Teknolojik Dönüşüm</span></h2>
-                <p>Biz, eğitim sektöründe teknolojik dönüşümü başlatmak için yola çıkan, yenilikçi bir yazılımeviyiz.
-                </p>
-                <p>Adını yakında çok daha sık duyacağınız şirketimiz <strong>Panda's Tech</strong>'in ilk ve en iddialı adımı olan
-                    <strong>CoMentor</strong>, salt bir uygulama değil; öğrenci, veli ve öğretmen arasındaki bağı
-                    birleştiren kapsamlı bir ekosistemdir.</p>
-                <a href="#" class="btn btn-outline mt-3">Hikayemizi Okuyun</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container cta-container glass-panel text-center">
-            <h2>Hazır Mısınız?</h2>
-            <p>Eğitim vizyonunuzu baştan yazmak ve platformumuzda yerinizi ayırtmak için şimdi ön kayıt oluşturun.</p>
-            <form class="cta-form">
-                <input type="email" placeholder="E-posta adresiniz" required>
-                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
+            <div class="footer-layout">
                 <div class="footer-brand">
                     <a href="#" class="logo">
                         <img src="logo.jpg" alt="Panda's Tech Logo" class="logo-img">
                         Panda's Tech
                     </a>
-                    <p>Eğitimde inovasyon. Öğrenciler için daha iyi bir gelecek inşa ediyoruz.</p>
+                    <p>Eğitimde yüksek teknoloji ve inovasyon ile geleceği bugünden hazırlıyoruz.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Ürün</h4>
+                <div class="footer-links-group">
+                    <h4>Ürün & Çözümler</h4>
                     <ul>
-                        <li><a href="#">Özellikler</a></li>
-                        <li><a href="#">Fiyatlandırma</a></li>
-                        <li><a href="#">Kullanım Vakaları</a></li>
+                        <li><a href="#product">CoMentor Ai</a></li>
+                        <li><a href="#services">Kurumsal Çözümler</a></li>
+                        <li><a href="#">Otomasyon Sistemleri</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Şirket</h4>
+                <div class="footer-links-group">
+                    <h4>Kurumsal</h4>
                     <ul>
                         <li><a href="#">Hakkımızda</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#why-us">Teknoloji</a></li>
+                        <li><a href="#">İletişim</a></li>
                     </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Bizi Takip Edin</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
-                        <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
-                        <a href="https://www.instagram.com/pandast3ch/" target="_blank" rel="noopener noreferrer"><i class="ph-fill ph-instagram-logo"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Panda's Tech. Tüm hakları saklıdır.</p>
-                <div class="legal">
-                    <a href="#">Gizlilik Politikası</a>
-                    <a href="#">Kullanım Koşulları</a>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="https://www.instagram.com/pandast3ch/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
-
 </body>
-
 </html>

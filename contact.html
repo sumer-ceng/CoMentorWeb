@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Panda's Tech</title>
+    <meta name="description" content="Panda's Tech ile iletişime geçin. Eğitimin geleceğini birlikte kodlayalım.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Overlay Gradients for Background Aesthetics -->
+    <div class="bg-glow pattern-glow-left"></div>
+    <div class="bg-glow pattern-glow-right"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Panda's Tech Logo" class="logo-img">
+                Panda's Tech
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#product">CoMentor</a></li>
+                <li><a href="index.html#services">Çözümler</a></li>
+                <li><a href="index.html#why-us">Neden Biz?</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-sm">Bize Ulaşın</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info">
+                    <div class="badge">
+                        <span class="badge-dot"></span> 7/24 Aktif Destek
+                    </div>
+                    <h1 class="section-title">Bizimle <br><span class="text-emerald">İletişime Geçin.</span></h1>
+                    <p class="section-subtitle">Eğitim çözümlerimizi incelemek, sisteminize özel yazılım geliştirmemizi
+                        istemek veya aklınıza takılan diğer tüm sorular için bize form üzerinden yazabilirsiniz.</p>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="ph-fill ph-envelope-simple text-emerald"></i>
+                            <div>
+                                <h4>E-Posta</h4>
+                                <p>pandast3ch@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="ph-fill ph-map-pin text-emerald"></i>
+                            <div>
+                                <h4>Merkez Ofis</h4>
+                                <p> <br>Konya, Türkiye</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-panel">
+                    <h2>Mesaj Gönder</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Posta Adresiniz</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@sirket.com"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <input type="text" id="subject" name="subject" required
+                                placeholder="Nasıl yardımcı olabiliriz?" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Detaylı mesajınızı buraya yazın..." class="form-control"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="ph-bold ph-paper-plane-right"></i> Gönder
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="logo.jpg" alt="Panda's Tech Logo" class="logo-img">
+                        Panda's Tech
+                    </a>
+                    <p>Eğitimde yüksek teknoloji ve inovasyon ile geleceği bugünden hazırlıyoruz.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Ürün & Çözümler</h4>
+                    <ul>
+                        <li><a href="index.html#product">CoMentor Ai</a></li>
+                        <li><a href="index.html#services">Kurumsal Çözümler</a></li>
+                        <li><a href="#">Otomasyon Sistemleri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Kurumsal</h4>
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="index.html#why-us">Teknoloji</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Panda's Tech. Tüm hakları saklıdır.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                    <a href="https://www.instagram.com/pandast3ch/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
